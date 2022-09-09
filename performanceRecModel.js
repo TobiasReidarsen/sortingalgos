@@ -1,6 +1,6 @@
 let performanceRec = {
     type: {
-        NumberArrSort: [],
+        NumberArrSort: [], // #TODO: do {[]} instead?
         NoNumberArrSort: []
     }
 }
