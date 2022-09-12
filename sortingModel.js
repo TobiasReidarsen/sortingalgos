@@ -1,4 +1,4 @@
-let sortingModel = {
+const sortingModel = {
     unsortedArray: [],
     sortedArray: [],
     size: 10,

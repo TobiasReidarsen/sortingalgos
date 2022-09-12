@@ -9,7 +9,6 @@
 let countBub = 0;
 
 
-
 function randomUnsortedArray(size, intSize) {
     // #TODO: Make it so that a number appears only once, or a maximum of n times.
     let randoArray = [];
@@ -59,20 +58,24 @@ function bubSortNoNumberArr(array) {
 }
 
 
-function performanceRecorder(whichSort, array) {
+function performanceRecorder(whichSort) {
+
+    let sortedArray = [];
+    let array = Array.from(sortingModel.unsortedArray);
 
 
     const start = performance.now();
-
     if (whichSort === 0) {
-        sortingModel.sortedArray = bubSort(array);
+        sortedArray.push(bubSort(array));
     } else if (whichSort === 1) {
-        sortingModel.sortedArray = bubSortNoNumberArr(array);
+        sortedArray = bubSortNoNumberArr(array);
 
     }
 
     const end = performance.now();
     const exeTime = end - start;
+
+    sortingModel.sortedArray = sortedArray;
 
     //#TODO: add IntSize as well
     if (whichSort === 0) {
