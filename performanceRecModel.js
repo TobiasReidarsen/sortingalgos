@@ -12,6 +12,6 @@ function saveToStorage() {
 }
 
 function clearStorage() {
-    localStorage.removeItem('performanceRec');
+    localStorage.clear();
 }
 
