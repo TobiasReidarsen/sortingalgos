@@ -1,3 +1,5 @@
+// TODO: implement local storage.
+
 // Bubble Sort
 // Compare each element and switch places if one is larger than the other
 
@@ -84,6 +86,7 @@ function performanceRecorder(whichSort) {
         performanceRec.type.NoNumberArrSort.push({time: exeTime, count: countBub, arrayLength: array.length});
 
     }
+    saveToStorage();
 
     countBub = 0;
 

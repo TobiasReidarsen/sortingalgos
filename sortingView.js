@@ -24,6 +24,7 @@ function sortingView() {
             <button onclick="startSorting(0)">With countdown</button>
             <button onclick="startSorting(1)">No countdown</button>
             <button onclick="startSorting(2)">Both</button>
+            <button onclick="clearStorage()">Clear localStorage</button>
         </div>
     `;
 
